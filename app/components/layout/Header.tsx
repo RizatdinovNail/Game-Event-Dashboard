@@ -22,8 +22,8 @@ export const links = [
 
 export default function Header() {
   return (
-    <header className="px-4 py-4 backdrop-blur-md fixed w-full">
-      <div className="mx-auto flex max-w-7xl w-full items-center justify-between">
+    <header className="px-4 py-4 backdrop-blur-md sticky w-full z-100 top-0">
+      <div className="mx-auto flex max-w-400 w-full items-center justify-between">
         <nav aria-label="Main navigation" className="flex items-center gap-8">
           <Link
             href="/"

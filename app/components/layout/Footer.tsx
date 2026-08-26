@@ -60,7 +60,7 @@ function FooterLink({ href, children }: FooterLinkProps) {
 export default function Footer() {
   return (
     <footer className="flex flex-col gap-8 bg-(--secondary-bg) border-t-2 border-t-[#27272A] px-4 py-8">
-      <section className="mx-auto grid w-full max-w-7xl gap-12 md:grid-cols-4">
+      <section className="mx-auto grid w-full max-w-400 gap-12 md:grid-cols-4">
         <div className="flex flex-col gap-4">
           <Link
             href="/"
@@ -138,7 +138,7 @@ export default function Footer() {
           </ul>
         </nav>
       </section>
-      <section className="mx-auto flex w-full max-w-7xl justify-between border-t-2 border-t-[#27272A] pt-4 text-(--third-text) text-sm max-md:flex-col items-center">
+      <section className="mx-auto flex w-full max-w-400 justify-between border-t-2 border-t-[#27272A] pt-4 text-(--third-text) text-sm max-md:flex-col items-center">
         <p>© 2026 Apex Racing Hub. All rights reserved.</p>
         <p>This is a fictional portfolio project.</p>
       </section>
