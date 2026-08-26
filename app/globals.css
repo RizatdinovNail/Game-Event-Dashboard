@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+:root {
+  --primary-bg: #09090b;
+  --secondary-bg: #18181b;
+  --accentColor: #f82a2a;
+  --primary-text: #fafafa;
+  --secondary-text: #54545a;
+  --third-text: #7f7f87;
+  --font-heading: var(--font-oswald);
+  --font-body: var(--font-inter);
+}
+
+html {
+  background-color: var(--primary-bg);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
