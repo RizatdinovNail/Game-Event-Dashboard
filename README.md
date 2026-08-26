@@ -35,6 +35,7 @@ The project focuses on building a polished, accessible, and maintainable fronten
 
 The project separates data access, UI components, and application pages to keep the codebase maintainable and reusable.
 
+```text
 ├── app/
    ├── components/
    │   ├── events/
@@ -53,7 +54,7 @@ The project separates data access, UI components, and application pages to keep 
    ├── rankings/
    ├── page.tsx
    └── types/
-
+```
 
 ## Accessibility
 
