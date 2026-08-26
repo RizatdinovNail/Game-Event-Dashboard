@@ -12,13 +12,25 @@ export default function ButtonLink({
   children,
   ...props
 }: ButtonLinkProps) {
-  const baseStyles = "";
+  const baseStyles = `focus-visible:outline-none 
+    focus-visible:ring-2 
+    focus-visible:ring-(--accentColor) 
+    focus-visible:ring-offset-2 
+    focus-visible:ring-offset-(--primary-bg) 
+    uppercase 
+    text-(--primary-text) 
+    rounded-sm 
+    w-fit 
+    py-2 
+    px-12 
+    font-semibold 
+    font-(family-name:--font-heading)
+    max-sm:w-full 
+    max-sm:text-center`;
 
   const variants = {
-    primary:
-      "bg-(--accentColor) uppercase text-(--primary-text) rounded-sm w-fit py-2 px-12 font-semibold font-(family-name:--font-heading) max-sm:w-full max-sm:text-center",
-    secondary:
-      "bg-(--primary-bg) uppercase text-(--primary-text) rounded-sm w-fit py-2 px-12 font-semibold font-(family-name:--font-heading) border-(--third-text) border-1 max-sm:w-full max-sm:text-center",
+    primary: "bg-(--accentColor)",
+    secondary: "bg-(--primary-bg) border-(--third-text) border",
   };
 
   return (
