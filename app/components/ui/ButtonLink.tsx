@@ -26,11 +26,14 @@ export default function ButtonLink({
     font-semibold 
     font-(family-name:--font-heading)
     max-sm:w-full 
-    max-sm:text-center`;
+    max-sm:text-center
+    transition-colors 
+    duration-200`;
 
   const variants = {
-    primary: "bg-(--accentColor)",
-    secondary: "bg-(--primary-bg) border-(--third-text) border",
+    primary: "bg-(--accentColor) hover:bg-[#c01616]",
+    secondary:
+      "bg-(--primary-bg) border-(--third-text) border hover:bg-(--secondary-bg)",
   };
 
   return (

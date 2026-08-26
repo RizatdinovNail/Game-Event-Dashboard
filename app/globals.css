@@ -3,7 +3,9 @@
 :root {
   --primary-bg: #09090b;
   --secondary-bg: #18181b;
+  --third-bg: #0e0e10;
   --accentColor: #f82a2a;
+  --secondAccentColor: #660609;
   --primary-text: #fafafa;
   --secondary-text: #54545a;
   --third-text: #7f7f87;
