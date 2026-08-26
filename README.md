@@ -1,4 +1,4 @@
-# Apex Racing Hub
+# Game Event Dashboard
 
 A modern motorsport and esports platform focused on competitive racing events, driver rankings, games, and championship results.
 
@@ -103,7 +103,7 @@ Planned features include:
 
 ## Disclaimer
 
-Apex Racing Hub is a fictional portfolio project and is not affiliated with Polyphony Digital, Gran Turismo, or any other motorsport organization or game developer.
+This app is a fictional portfolio project and is not affiliated with Polyphony Digital, Gran Turismo, or any other motorsport organization or game developer.
 
 ## License
 
