@@ -11,10 +11,6 @@ export const links = [
     href: "/rankings",
   },
   {
-    name: "Drivers",
-    href: "/drivers",
-  },
-  {
     name: "Games",
     href: "/games",
   },

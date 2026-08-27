@@ -12,7 +12,10 @@ export default function LiveEvents() {
       aria-labelledby="live-events-heading"
     >
       <div className="mx-auto flex max-w-400 w-full items-center justify-between">
-        <h2 className="flex items-center gap-2 uppercase text-(--primary-text) text-4xl font-bold">
+        <h2
+          className="flex items-center gap-2 uppercase text-(--primary-text) text-4xl font-bold"
+          id="live-events-heading"
+        >
           <span>
             <Circle
               aria-hidden="true"
