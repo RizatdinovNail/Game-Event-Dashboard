@@ -42,7 +42,7 @@ export default function LiveEvents() {
         </Link>
       </div>
       <ul className="grid grid-cols-3 mx-auto max-w-400 w-full gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
-        {liveEvents.map((event) => (
+        {liveEvents.slice(0, 3).map((event) => (
           <li key={event.id}>
             <EventCard variant="live" event={event}>
               <div className="bg-(--primary-bg) min-h-[20vh] relative">

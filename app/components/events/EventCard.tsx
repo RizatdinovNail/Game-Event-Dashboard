@@ -13,7 +13,7 @@ export default function EventCard({
   ...props
 }: EventCardProps) {
   const baseStyles =
-    "bg-(--third-bg) rounded-sm border border-(--third-text) cursor-pointer";
+    "bg-(--third-bg) rounded-sm border border-(--third-text) cursor-pointer h-full";
 
   const variants = {
     upcoming: "",
