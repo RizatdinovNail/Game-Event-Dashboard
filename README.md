@@ -21,6 +21,8 @@ The project focuses on building a polished, accessible, and maintainable fronten
 - Accessible navigation and interactive elements
 - Reusable UI components
 - Responsive layouts for desktop, tablet, and mobile
+- Event details pages
+- Event filtering and search
 
 ## Tech Stack
 
@@ -90,8 +92,6 @@ The data layer is separated from the UI so that the mock data can later be repla
 The project is currently under active development.
 
 Planned features include:
-- Event details pages
-- Event filtering and search
 - Driver profiles
 - Full rankings page
 - Game pages
