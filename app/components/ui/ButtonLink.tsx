@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ComponentProps } from "react";
 
 type ButtonLinkProps = ComponentProps<typeof Link> & {
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "cardButton";
   children: React.ReactNode;
 };
 
@@ -28,12 +28,18 @@ export default function ButtonLink({
     max-sm:w-full 
     max-sm:text-center
     transition-colors 
-    duration-200`;
+    duration-200
+    flex
+    gap-4
+    justify-center
+    items-center`;
 
   const variants = {
     primary: "bg-(--accentColor) hover:bg-[#c01616]",
     secondary:
       "bg-(--primary-bg) border-(--third-text) border hover:bg-(--secondary-bg)",
+    cardButton:
+      "text-(--primary-text) w-full bg-(--secondary-bg)  font-bold hover:bg-(--primary-bg)/10 border border-(--secondary-bg)",
   };
 
   return (

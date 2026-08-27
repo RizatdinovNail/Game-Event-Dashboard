@@ -3,12 +3,13 @@ import { ChevronRight, Circle, MapPin, Users } from "lucide-react";
 import Link from "next/link";
 import EventCard from "../events/EventCard";
 import { formatDate } from "@/app/hooks/formatDate";
+import ButtonLink from "../ui/ButtonLink";
 
 export default function UpcomingEvents() {
   const upcomingEvents = getUpcomingEvents();
   return (
     <section
-      className="bg-(--primary-bg) min-h-[62vh] flex justify-center flex-col gap-8 px-4 py-10"
+      className="bg-(--primary-bg) min-h-[62vh] flex justify-center flex-col gap-8 px-4 py-10 border-t border-(--primary-text)"
       aria-labelledby="live-events-heading"
     >
       <div className="mx-auto flex max-w-400 w-full items-center justify-between">
@@ -53,28 +54,9 @@ export default function UpcomingEvents() {
                 <h3 className="text-(--primary-text) text-2xl uppercase font-bold">
                   {event.name}
                 </h3>
-                <Link
-                  href={`/events/${event.id}`}
-                  className="
-                uppercase 
-                text-(--primary-text) 
-                w-full 
-                bg-(--secondary-bg) 
-                py-2 
-                text-center 
-                font-bold 
-                rounded-sm
-                focus-visible:outline-none 
-                focus-visible:ring-2 
-                focus-visible:ring-(--accentColor)
-                hover:bg-(--primary-bg)/10
-                border
-                border-(--secondary-bg)
-                transition-colors
-                duration-200"
-                >
+                <ButtonLink href={`/events/${event.id}`} variant="cardButton">
                   Details
-                </Link>
+                </ButtonLink>
               </div>
             </EventCard>
           </li>

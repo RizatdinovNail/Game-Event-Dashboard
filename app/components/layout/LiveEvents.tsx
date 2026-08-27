@@ -2,6 +2,7 @@ import { getLiveEvents } from "@/app/lib/events";
 import { ChevronRight, Circle, MapPin, Users } from "lucide-react";
 import Link from "next/link";
 import EventCard from "../events/EventCard";
+import ButtonLink from "../ui/ButtonLink";
 
 export default function LiveEvents() {
   const liveEvents = getLiveEvents();
@@ -67,28 +68,9 @@ export default function LiveEvents() {
                     {event.participants === 1 ? "Driver" : "Drivers"}
                   </p>
                 </div>
-                <Link
-                  href={`/events/${event.id}`}
-                  className="
-                uppercase 
-                text-(--primary-text) 
-                w-full 
-                bg-(--secondary-bg) 
-                py-2 
-                text-center 
-                font-bold 
-                rounded-sm
-                focus-visible:outline-none 
-                focus-visible:ring-2 
-                focus-visible:ring-(--accentColor)
-                hover:bg-(--primary-bg)/10
-                border
-                border-(--secondary-bg)
-                transition-colors
-                duration-200"
-                >
+                <ButtonLink href={`/events/${event.id}`} variant="cardButton">
                   Watch Live
-                </Link>
+                </ButtonLink>
               </div>
             </EventCard>
           </li>
